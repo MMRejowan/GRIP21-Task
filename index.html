@@ -1,0 +1,195 @@
+<html>
+
+    <title>
+    
+    </title>
+
+    
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="index.css" type="text/css">
+    </head>
+    
+    
+    <body>
+    
+        
+        <h1>Saving the Stray'S</h1>
+        
+        <div class="navi">
+        
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#abo">ABOUT</a></li>
+            <li><a href="#con">CONTACT</a></li>
+            </ul>
+        </div>
+        
+        
+        <div class="dona">
+            
+             <div class="pic">
+                
+                <div class="pic1">
+                <img src="images/1.jfif" width="360px" height="250px">
+                    <img src="images/2.jfif">
+                </div>
+                <div class="pic2">
+                <img src="images/3.jfif" >
+                    <img src="images/4.jfif" width="420px" height="290px">
+                
+                </div>
+            
+            <div class="content">
+    <h2 style="font-size: 40px;">A platform for helping the street animals.
+</h2>
+    <p style="font-size: 28px;">We appreciate the kind help you are doing towards the helpless stray animals.
+With the ample amount that we receive we try our best at providing care, support for the strays. We also try to find the best foster homes for them.
+</p>
+  </div>
+            </div>
+
+            
+        
+             <div class="pay">
+                 
+                 <button id="myBtn">Donate</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+      
+      <img src="images/5.jfif" width="360px" height="250px">
+    <span class="close">&times;</span>
+      <p style="font-size: 18px">Every Charitable Act is a stepping stone toward Heaven</p>
+      
+      <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_Hv5EMIDdo1KAwQ" async> </script> 
+      </form>
+      
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+        </div>
+            
+        </div>
+        
+
+        
+        
+       
+        <div class="About" id="abo">
+        
+            <h style="font-size: 50px;">About Us</h>
+            
+            
+            <img src="images/6.jfif" width="420px" height="290px">
+            
+            <p>We are a small organisation and collaborate with a care center for stray animals.
+            <br>
+                Our objective is to find foster homes for these needy animals and also nurture those who are staying in the care home.
+                
+                <br>
+                The organisation was founded by couple of students and is managed virtually. The care centers are privately owned by people around the globe. 
+                <br>
+                
+                We act as a medium between the care centers and people by collecting the donation and sending it to the care centers.
+            </p>
+            
+        
+        </div>
+        
+        
+    
+    </body>
+    
+    <button class="tbtn" onclick="topFunction()" id="tBtn" title="Go to top">^</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("tBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+    
+    <footer>
+    
+        
+        <div class="contact" id="con">
+        
+            <h3 style="text-align: center; font-size:48px; ">Contact Form</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Name</label>
+    <input type="text" id="name" name="name" placeholder="Type Your Name">
+
+    <label for="e-mail">E-mail</label>
+      <br>
+    <input type="email" id="e-mail" name="E-mail" placeholder="Give Your E-mail">
+      <br>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+        </div>
+    
+    </footer>
+</html>
